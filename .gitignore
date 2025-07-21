@@ -1,15 +1,29 @@
+# ========== Gradle & build ==========
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ========== IDE ==========
+.idea/
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+
+# ========== OS Junk ==========
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+Thumbs.db
+
+# ========== Local config ==========
 local.properties
+
+# ========== Log files & temp ==========
+*.log
+*.tmp
+
+# ========== Kotlin/Java backup ==========
+*.class
+*.jar
+*.war
+*.apk
+*.ap_
+
+# ========== Misc ==========
+.cxx/
