@@ -40,7 +40,21 @@
 
 ## 📷 Screenshots
 
-_Add screenshots of the app here (optional)._
+### 🏋️ Personalized Experience  
+Manage exercises, track personal data, and create custom workouts.  
+![Personalized Experience](screenshots/fitit2.png)
+
+### ⏱️ Workout Timing & Tracking  
+Estimate workout time and check off completed exercises in real-time.  
+![Workout Timing & Tracking](screenshots/fitit3.png)
+
+### 🔧 Technical Architecture & Features  
+Detailed breakdown of architecture, components, and advanced features.  
+![Technical Details](screenshots/fitit4.png)
+
+### 🌍 Discover Nearby Activities  
+Use Google Maps to explore nearby gyms and track your activities on a calendar.  
+![Explore Features](screenshots/fitit1.png)
 
 ---
 
