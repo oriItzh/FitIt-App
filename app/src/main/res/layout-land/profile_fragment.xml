@@ -36,7 +36,7 @@
                 android:text="@string/welcome"
                 android:textColor="@color/white"
                 android:textSize="35sp"
-                android:fontFamily="@font/hello"/>
+                android:fontFamily="@font/lato"/>
 
             <Space
                 android:layout_width="10dp"
@@ -48,7 +48,7 @@
                 android:id="@+id/profile_name"
                 android:text=""
                 android:textColor="@color/white"
-                android:fontFamily="@font/hello"
+                android:fontFamily="@font/lato"
                 android:textSize="35sp"/>
 
         </LinearLayout>

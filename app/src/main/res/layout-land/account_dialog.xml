@@ -40,7 +40,7 @@
             android:text="@string/my_account"
             android:textSize="20sp"
             android:textColor="@color/white"
-            android:fontFamily="@font/shortbaby"/>
+            android:fontFamily="@font/hello"/>
 
     </LinearLayout>
 

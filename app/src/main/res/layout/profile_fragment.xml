@@ -36,7 +36,7 @@
                 android:text="@string/welcome"
                 android:textColor="@color/white"
                 android:textSize="35sp"
-                android:fontFamily="@font/hello"/>
+                android:fontFamily="@font/lato"/>
 
             <Space
                 android:layout_width="10dp"
