@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:id="@+id/reservation"
+    android:orientation="vertical"
+    tools:context=".ui.account.AccountDialog">
+
+    <!-- Fix header for Account -->
+    <LinearLayout
+        android:id="@+id/fixed_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/navy_blue"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <!--  Go Back arrow -->
+
+        <ImageButton
+            android:id="@+id/goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/baseline_arrow_circle_left_24"
+            android:layout_margin="10dp"/>
+
+        <!--  Account  -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="@string/my_account"
+            android:paddingTop="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/shortbaby"/>
+
+    </LinearLayout>
+
+    <!-- Scroll View -->
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="@drawable/trx_background"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+
+            <!-- First Name -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/first_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@color/dark_blue"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextAppearance="@style/MyHintTextAppearance">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/first_name_et"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/first_name"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:fontFamily="@font/lato"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Surname  -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/surname_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/first_name_layout"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@color/dark_blue"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/surname_et"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/surname"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Age  -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/age_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/surname_layout"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@color/dark_blue"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/age_et"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/age"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/white"
+                    android:inputType="number"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Height  -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/height_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/age_layout"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@color/dark_blue"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/height_et"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/height"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/white"
+                    android:inputType="number"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Weight  -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/weight_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/height_layout"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@color/dark_blue"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/weight_et"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/weight"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/white"
+                    android:inputType="number"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/weight_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp">
+
+                <!-- Male -->
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="@string/male"
+                    android:fontFamily="@font/lato"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColorHighlight="@color/white"
+                    android:checked="true"/>
+
+                <!--  Female  -->
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="@string/female"
+                    android:fontFamily="@font/lato"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+
+            </RadioGroup>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_picker"
+                app:layout_constraintTop_toBottomOf="@id/sex"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/pick_profile_image"
+                android:gravity="center"
+                app:strokeWidth="3dp"
+                android:fontFamily="@font/lato"
+                android:textStyle="bold"
+                app:strokeColor="@color/white"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/dark_blue"
+                android:layout_marginTop="20dp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/picked_image"
+                android:layout_marginVertical="30dp"
+                app:layout_constraintTop_toBottomOf="@id/image_picker"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/empty_profile"/>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/submit"
+                app:layout_constraintTop_toBottomOf="@id/picked_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/update"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/lato"
+                app:strokeWidth="3dp"
+                app:strokeColor="@color/white"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/dark_blue"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/unvalid_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/submit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:fontFamily="@font/lato"
+                android:textSize="20sp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>

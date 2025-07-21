@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="30dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.detailworkout.DetailedWorkoutFragment"
+    android:background="@color/navy_blue">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:background="@drawable/card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"/>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity=""
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/baseline_arrow_circle_right_24"
+                    android:id="@+id/goBack"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/workout_title"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/lato"
+                android:textStyle="bold"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/info_user"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/add_exercise"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato"
+                app:strokeWidth="3dp"
+                app:iconSize="20dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                app:iconTint="@color/white"
+                app:strokeColor="@color/white"
+                android:backgroundTint="@color/navy_blue"
+                app:icon="@drawable/baseline_add_24"
+                android:layout_gravity="bottom|end"
+                android:id="@+id/add_exercise_button"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

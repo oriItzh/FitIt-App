@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loadScreenFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.architectureproject.ui.profile.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_accountDialog"
+            app:destination="@id/accountDialog" />
+        <action
+            android:id="@+id/action_profileFragment_to_exercisesFragment"
+            app:destination="@id/exercisesFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_allWorkoutsFragment"
+            app:destination="@id/allWorkoutsFragment"
+            app:popUpTo="@id/profileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountDialog"
+        android:name="com.example.architectureproject.ui.account.AccountDialog"
+        android:label="account_dialog"
+        tools:layout="@layout/account_dialog" >
+        <action
+            android:id="@+id/action_accountDialog_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:popUpTo="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exercisesFragment"
+        android:name="com.example.architectureproject.ui.allExercises.ExercisesFragment"
+        android:label="all_exercises_fragment"
+        tools:layout="@layout/all_exercises_fragment" >
+        <action
+            android:id="@+id/action_exercisesFragment_to_addExerciseFragment"
+            app:destination="@id/addExerciseFragment" />
+        <action
+            android:id="@+id/action_exercisesFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_exercisesFragment_to_detailedExerciseFragment"
+            app:destination="@id/detailedExerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addExerciseFragment"
+        android:name="com.example.architectureproject.ui.addExercise.AddExerciseFragment"
+        android:label="add_exercise_fragment"
+        tools:layout="@layout/add_exercise_fragment" >
+        <action
+            android:id="@+id/action_addExerciseFragment_to_exercisesFragment"
+            app:destination="@id/exercisesFragment"
+            app:popUpTo="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allWorkoutsFragment"
+        android:name="com.example.architectureproject.ui.allworkouts.AllWorkoutsFragment"
+        android:label="all_workouts_fragment"
+        tools:layout="@layout/all_workouts_fragment" >
+        <action
+            android:id="@+id/action_allWorkoutsFragment_to_createWorkout"
+            app:destination="@id/createWorkout" />
+        <action
+            android:id="@+id/action_allWorkoutsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_allWorkoutsFragment_to_detailedWorkoutFragment"
+            app:destination="@id/detailedWorkoutFragment"
+            app:popUpTo="@id/allWorkoutsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createWorkout"
+        android:name="com.example.architectureproject.ui.createworkout.CreateWorkout"
+        android:label="create_workout_fragment"
+        tools:layout="@layout/create_workout_fragment" >
+        <action
+            android:id="@+id/action_createWorkout_to_allWorkoutsFragment"
+            app:destination="@id/allWorkoutsFragment"
+            app:popUpTo="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailedWorkoutFragment"
+        android:name="com.example.architectureproject.ui.detailworkout.DetailedWorkoutFragment"
+        android:label="detail_workout_layout"
+        tools:layout="@layout/detail_workout_layout" >
+        <action
+            android:id="@+id/action_detailedWorkoutFragment_to_updateWorkout"
+            app:destination="@id/updateWorkout" />
+        <action
+            android:id="@+id/action_detailedWorkoutFragment_to_allWorkoutsFragment"
+            app:destination="@id/allWorkoutsFragment"
+            app:popUpTo="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateWorkout"
+        android:name="com.example.architectureproject.ui.updateworkout.UpdateWorkout"
+        android:label="update_workout_fragment"
+        tools:layout="@layout/update_workout_fragment" >
+        <action
+            android:id="@+id/action_updateWorkout_to_detailedWorkoutFragment"
+            app:destination="@id/detailedWorkoutFragment"
+            app:popUpTo="@id/allWorkoutsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadScreenFragment"
+        android:name="com.example.architectureproject.ui.LoadScreenFragment"
+        android:label="load_screen"
+        tools:layout="@layout/load_screen" >
+        <action
+            android:id="@+id/action_loadScreenFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.architectureproject.ui.map.MapFragment"
+        android:label="map_layout"
+        tools:layout="@layout/map_layout" >
+        <action
+            android:id="@+id/action_mapFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailedExerciseFragment"
+        android:name="com.example.architectureproject.ui.allExercises.DetailedExerciseFragment"
+        android:label="detailed_exercise"
+        tools:layout="@layout/detailed_exercise" >
+        <action
+            android:id="@+id/action_detailedExerciseFragment_to_exercisesFragment"
+            app:destination="@id/exercisesFragment"
+            app:popUpTo="@id/profileFragment" />
+    </fragment>
+
+</navigation>

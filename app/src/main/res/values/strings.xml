@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">FitIt</string>
+    <string name="my_profile">My Profile</string>
+    <string name="create_account">Create Account</string>
+    <string name="first_name">First Name</string>
+    <string name="surname">Surname</string>
+    <string name="age">Age</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="pick_profile_image">Pick Profile Image</string>
+    <string name="update">Update</string>
+    <string name="update_account">Update Profile</string>
+    <string name="my_account">My Account</string>
+    <string name="age_d">Age:</string>
+    <string name="weight_d">Weight:</string>
+    <string name="height_d">Height:</string>
+    <string name="my_plans">My Exercises</string>
+    <string name="activity">Activity</string>
+    <string name="friends">Friends</string>
+    <string name="welcome">Welcome</string>
+    <string name="add_a_plan">Add an exercise</string>
+    <string name="m">M</string>
+    <string name="valid_name">Enter a 2 – 10 alphabet characters</string>
+    <string name="valid_surname">Enter alphabet characters</string>
+    <string name="valid_age">The permitted age for use is 15 – 99</string>
+    <string name="valid_weight">Enter a valid weight - in kg</string>
+    <string name="valid_height">Enter a valid height - in cm</string>
+    <string name="kg">Kg</string>
+    <string name="add_exercise">Add Exercise</string>
+    <string name="enter_title">Title:</string>
+    <string name="add_exercise_action">Add to \"My exercises\"</string>
+    <string name="my_workouts">My Workouts</string>
+    <string name="done">Done</string>
+    <string name="create_a_workout">Create a Workout</string>
+    <string name="build_your_workout">Build Your Workout</string>
+    <string name="your_workout">Your Workout</string>
+    <string name="add_exercises">Add Exercises</string>
+    <string name="my_activity">My Activity</string>
+    <string name="add_information">Add information</string>
+    <string name="date">Date</string>
+    <string name="meals">My Meals: </string>
+    <string name="workoutp">Workout: </string>
+    <string name="workout">Workout</string>
+    <string name="intensity">Intensity</string>
+    <string name="duration">Duration: </string>
+    <string name="cancel">cancel</string>
+    <string name="stop_activity">Stop Activity</string>
+    <string name="_0_00">0:00</string>
+    <string name="pause_activity">Pause Activity</string>
+    <string name="today_s_workout">Today\'s Workout</string>
+    <string name="relax">Relax</string>
+    <string name="time">Time</string>
+    <string name="add_new_activity">Add New Activity</string>
+    <string name="_5">5</string>
+    <string name="_3">3</string>
+    <string name="choose_your_workout">Choose Your Workout</string>
+    <string name="call_a_friend_to_join">Call A Friend To Join</string>
+    <string name="remainder">Remainder:</string>
+    <string name="today_at">Today At</string>
+    <string name="time_">Time:</string>
+    <string name="intensity_">Intensity:</string>
+    <string name="you_don_t_have_workouts">You Don\'t have Workouts</string>
+    <string name="find_a_gym">Find A Gym</string>
+    <string name="google_maps_key">AIzaSyBfJC2H3WGZ7wom9P13adyTED7rONsnKMc</string>
+    <string name="my_location">My Location:</string>
+    <string name="explore">Explore</string>
+    <string name="closest_gym">Closest Gym:</string>
+    <string name="workout_outdoor">Outdoor Workout:</string>
+    <string name="for_more_gyms">For More Gyms Around</string>
+    <string name="for_more_parks">For More Parks Around</string>
+    <string name="my_exercises">My Exercises</string>
+    <string name="gyms_around">Gyms Around:</string>
+    <string name="km">Km</string>
+    <string name="_0">0</string>
+    <string name="_0_0">0.0</string>
+    <string name="error_searching">Error for searching the requested action</string>
+    <string name="increase_range">Increase Range</string>
+    <string name="delete_message_workout">Are you sure you want to delete this workout?</string>
+    <string name="delete_message_exercise">Are you sure you want to delete this Exercise?</string>
+    <string name="deleted">The workout has been deleted</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="start_workout">Start workout</string>
+    <string name="Exist_active_workout">Exists an active workout, please stop before start a new one"</string>
+    <string name="workout_started">Workout Started!</string>
+    <string name="activity_started">Activity Started!</string>
+    <string name="back">Back</string>
+    <string name="lazy">Im feeling lazy today</string>
+    <string name="exercise_deleted">The Exercise has been deleted</string>
+    <string name="fill_correct">Please fill all fields correctly</string>
+    <string name="workout_finished">Workout Finished</string>
+    <string name="resume_activity">Resume Activity</string>
+    <string name="cannot_find">Cannot Find</string>
+    <string name="main_item_title">Main item title</string>
+    <string name="number_of_sets">Number of sets</string>
+    <string name="number_of_reps">Number of reps</string>
+    <string name="exercise_no">Exercise No #</string>
+    <string name="back_hands_chest">#Back, #Hands, #chest</string>
+    <string name="add_an_exercise">Add an exercise</string>
+    <string name="_150_0">150.0</string>
+    <string name="_100_0">100.0</string>
+    <string name="update_exercise">Update</string>
+    <string name="update_exercise_title">Update Exercise</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="back_body">Back</string>
+    <string name="exercise_added">Exercise added successfully!</string>
+    <string name="hours">hours</string>
+    <string name="minutes">minutes</string>
+    <string name="exercise_updated">Excerise updated successfully!</string>
+
+    <string-array name="muscle_groups">
+        <item>Abductors</item>
+        <item>Abs</item>
+        <item>Lats</item>
+        <item>Biceps</item>
+        <item>Chest</item>
+        <item>Forearms</item>
+        <item>Front legs</item>
+        <item>Glutes</item>
+        <item>Lower back</item>
+        <item>Quads</item>
+        <item>Shoulders</item>
+        <item>Side legs</item>
+        <item>Triceps</item>
+        <item>Upper back</item>
+    </string-array>
+
+</resources>

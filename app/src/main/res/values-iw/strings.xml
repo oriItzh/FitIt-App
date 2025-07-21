@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FitIt</string>
+    <string name="my_profile">הפרופיל שלי</string>
+    <string name="create_account">צור חשבון</string>
+    <string name="first_name">שם פרטי</string>
+    <string name="surname">שם משפחה</string>
+    <string name="age">גיל</string>
+    <string name="height">גובה</string>
+    <string name="weight">משקל</string>
+    <string name="male">זכר</string>
+    <string name="female">נקבה</string>
+    <string name="pick_profile_image">בחר תמונת פרופיל</string>
+    <string name="update">עדכן</string>
+    <string name="update_account">עדכן פרופיל</string>
+    <string name="my_account">החשבון שלי</string>
+    <string name="age_d">גיל:</string>
+    <string name="weight_d">משקל:</string>
+    <string name="height_d">גובה:</string>
+    <string name="my_plans">התרגילים שלי</string>
+    <string name="activity">פעילות</string>
+    <string name="friends">חברים</string>
+    <string name="welcome">ברוך הבא</string>
+    <string name="add_a_plan">הוסף תרגיל</string>
+    <string name="m">מ\'</string>
+    <string name="valid_name">הכנס 2 – 10 אותיות</string>
+    <string name="valid_surname">הכנס תווים אלפביתיים</string>
+    <string name="valid_age">הגיל המותר לשימוש הוא 15 – 99</string>
+    <string name="valid_weight">הכנס משקל חוקי - בק"ג</string>
+    <string name="valid_height">הכנס גובה חוקי - בס"מ</string>
+    <string name="kg">ק\"ג</string>
+    <string name="add_exercise">הוסף תרגיל</string>
+    <string name="enter_title">שם התרגיל</string>
+    <string name="add_exercise_action">הוסף ל"תרגילים שלי"</string>
+    <string name="my_workouts">האימונים שלי</string>
+    <string name="done">לסיום</string>
+    <string name="create_a_workout">צור אימון</string>
+    <string name="build_your_workout">בנה את האימון שלך</string>
+    <string name="your_workout">האימון שלך</string>
+    <string name="add_exercises">הוסף תרגילים</string>
+    <string name="my_activity">הפעילות שלי</string>
+    <string name="add_information">הוסף מידע</string>
+    <string name="date">תאריך</string>
+    <string name="meals">הארוחות שלי:</string>
+    <string name="workoutp">אימון:</string>
+    <string name="workout">אימון</string>
+    <string name="intensity">עצימות</string>
+    <string name="duration">משך:</string>
+    <string name="cancel">לביטול</string>
+    <string name="stop_activity">עצור פעילות</string>
+    <string name="_0_00">0:00</string>
+    <string name="pause_activity">השהה פעילות</string>
+    <string name="today_s_workout">האימון היומי</string>
+    <string name="relax">מנוחה</string>
+    <string name="time">שעה</string>
+    <string name="add_new_activity">הוסף פעילות חדשה</string>
+    <string name="_5">5</string>
+    <string name="_3">3</string>
+    <string name="choose_your_workout">בחר את האימון שלך</string>
+    <string name="call_a_friend_to_join">קרא לחבר להצטרף</string>
+    <string name="remainder">תזכורת:</string>
+    <string name="today_at">היום בשעה</string>
+    <string name="time_">שעה:</string>
+    <string name="intensity_">עצימות:</string>
+    <string name="you_don_t_have_workouts">לא קיימים אימונים במערכת</string>
+    <string name="find_a_gym">מצא חדר כושר</string>
+    <string name="google_maps_key">AIzaSyBfJC2H3WGZ7wom9P13adyTED7rONsnKMc</string>
+    <string name="my_location">המיקום שלי:</string>
+    <string name="explore">מפות</string>
+    <string name="closest_gym">חדר הכושר הקרוב:</string>
+    <string name="workout_outdoor">לאימון בחוץ:</string>
+    <string name="for_more_gyms">לעוד חדרי כושר בסביבה</string>
+    <string name="for_more_parks">לעוד פארקים בסביבה</string>
+    <string name="my_exercises">התרגילים שלי</string>
+    <string name="gyms_around">חדרי כושר לידי:</string>
+    <string name="km">ק\"מ</string>
+    <string name="_0">0</string>
+    <string name="_0_0">0.0</string>
+    <string name="error_searching">שגיאה בחיפוש הפעולה המבוקשת</string>
+    <string name="increase_range">הגדל טווח</string>
+    <string name="delete_message_workout">האם אתה בטוח שברצונך למחוק את האימון?</string>
+    <string name="delete_message_exercise">האם אתה בטוח שברצונך למחוק את התרגיל?</string>
+    <string name="deleted">האימון נמחק</string>
+    <string name="yes">כן</string>
+    <string name="no">לא</string>
+    <string name="start_workout">התחל אימון</string>
+    <string name="Exist_active_workout">קיים אימון פעיל, בבקשה עצור אותו לפני שתתחיל חדש</string>
+    <string name="workout_started">האימון התחיל!</string>
+    <string name="activity_started">הפעילות התחילה!</string>
+    <string name="back">חזור</string>
+    <string name="lazy">אני עצלן</string>
+    <string name="exercise_deleted">התרגיל נמחק</string>
+    <string name="fill_correct">אנא מלא את כל השדות בצורה נכונה</string>
+    <string name="workout_finished">האימון הסתיים</string>
+    <string name="resume_activity">המשך פעילות</string>
+    <string name="cannot_find">לא ניתן למצוא</string>
+    <string name="main_item_title">שם היאימון</string>
+    <string name="number_of_sets">מספר סטים</string>
+    <string name="number_of_reps">מספר חזרות</string>
+    <string name="exercise_no">תרגיל מס</string>
+    <string name="back_hands_chest">גב, ידיים, חזה</string>
+    <string name="add_an_exercise">הוסף תרגיל</string>
+    <string name="_150_0">150.0</string>
+    <string name="_100_0">100.0</string>
+    <string name="update_exercise">עדכן</string>
+    <string name="update_exercise_title">עדכן תרגיל</string>
+    <string name="enter_description">תיאור</string>
+    <string name="back_body">גב</string>
+    <string name="exercise_added">התרגיל נוסף בהצלחה!</string>
+    <string name="hours">שעות</string>
+    <string name="minutes">דקות</string>
+    <string name="exercise_updated">התרגיל עודכן בהצלחה!</string>
+
+    <string-array name="muscle_groups">
+        <item>מקרבים</item>
+        <item>בטן</item>
+        <item>רחב גבי</item>
+        <item>יד קדמית</item>
+        <item>חזה</item>
+        <item>אמות</item>
+        <item>רגליים קדמיות</item>
+        <item>ישבן</item>
+        <item>גב תחתון</item>
+        <item>ירכיים קדמיות</item>
+        <item>כתפיים</item>
+        <item>רגליים צידיות</item>
+        <item>תלת ראשי</item>
+        <item>גב עליון</item>
+    </string-array>
+</resources>

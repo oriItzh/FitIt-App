@@ -1,0 +1,202 @@
+<RelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/dark_blue_alpha">
+
+    <!-- Fix header for Reservation -->
+    <LinearLayout
+        android:id="@+id/fixed_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navy_blue"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <!--  Go Back arrow -->
+
+        <ImageButton
+            android:id="@+id/goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_circle_right_24"
+            android:layout_margin="10dp"/>
+
+        <!--  Info  -->
+
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="@string/add_new_activity"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/hello"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fixed_header"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/no_workouts"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you_don_t_have_workouts"
+            android:gravity="center"
+            android:layout_marginVertical="20dp"
+            android:textSize="30sp"
+            android:textColor="@color/navy_blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"/>
+
+    </LinearLayout>
+
+    <!-- Scroll View -->
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fixed_header"
+        android:visibility="visible">
+
+        <!-- Linear Layout - main page -->
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_your_workout"
+                android:textStyle="bold"
+                android:textColor="@color/navy_blue"
+                android:fontFamily="@font/lato"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:layout_marginTop="12dp"
+                android:id="@+id/workoutSpinner"
+                android:layout_width="150dp"
+                android:background="@drawable/stroke_spinner"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp">
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:id="@+id/dateBtn"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    style="@style/blue_button_theme"/>
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time"
+                    android:id="@+id/timeBtn"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    style="@style/blue_button_theme"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/intensity"
+                android:textStyle="bold"
+                android:fontFamily="@font/lato"
+                android:textSize="20sp"/>
+
+            <!-- Choose the number of Intensity  -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginVertical="20dp">
+
+                <!--  Decrease  -->
+
+                <ImageButton
+                    android:id="@+id/minus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circular_btn"
+                    android:src="@drawable/minus" />
+
+                <!--  Number of Intensity -->
+
+                <TextView
+                    android:id="@+id/intensity_info"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/_3"
+                    android:textStyle="bold"
+                    android:textColor="@color/navy_blue"
+                    android:textSize="20sp"
+                    android:background="@color/white_translucent"/>
+
+                <!--  Increase  -->
+
+                <ImageButton
+                    android:id="@+id/plus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circular_btn"
+                    android:src="@drawable/up" />
+
+            </LinearLayout>
+
+
+            <!--  Done  -->
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/done"
+                android:id="@+id/done"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                style="@style/blue_button_theme"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

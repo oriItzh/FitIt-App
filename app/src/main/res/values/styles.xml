@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyHintTextAppearance" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/dark_blue</item> <!-- Adjust hint text color -->
+        <item name="android:textSize">20sp</item> <!-- Adjust hint text size -->
+        <!-- Add any other attributes you want to customize -->
+    </style>
+</resources>

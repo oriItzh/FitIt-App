@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/btn_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/v_minus"/>
+
+    <TextView
+        android:id="@+id/et_value"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/_100_0"/>
+
+    <ImageButton
+        android:id="@+id/btn_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/v_add"/>
+
+</LinearLayout>

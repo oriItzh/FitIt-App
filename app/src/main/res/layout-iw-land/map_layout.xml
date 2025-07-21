@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.map.MapFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:paddingVertical="10dp"
+        android:orientation="horizontal"
+        android:background="@color/dark_blue_alpha">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/explore"
+            android:layout_weight="1.5"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/navy_blue"
+            android:textStyle="bold"
+            android:paddingStart="10dp"
+            android:gravity="start"
+            android:textSize="25sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:id="@+id/go_back_button"
+            android:background="@drawable/hebrew_back"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0.2" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/navy_blue"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/my_location"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/cannot_find"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/gyms_around"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content" />
+
+                    <!--  Decrease  -->
+
+                    <ImageButton
+                        android:id="@+id/minusGym"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/circular_btn"
+                        android:src="@drawable/minus" />
+
+                    <!--  radius -->
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="15dp"
+                        android:background="@color/white_translucent"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/radiusGym"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/_0_0"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="7dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/km"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--  Increase  -->
+
+                    <ImageButton
+                        android:id="@+id/plusGym"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/circular_btn"
+                        android:src="@drawable/up" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapGym"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="20dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/workout_outdoor"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content" />
+
+                    <!--  Decrease  -->
+
+                    <ImageButton
+                        android:id="@+id/minusPark"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/circular_btn"
+                        android:src="@drawable/minus" />
+
+                    <!--  radius -->
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="15dp"
+                        android:background="@color/white_translucent"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/radiusPark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/_0_0"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="7dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/km"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--  Increase  -->
+
+                    <ImageButton
+                        android:id="@+id/plusPark"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/circular_btn"
+                        android:src="@drawable/up" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapPark"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="30dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
