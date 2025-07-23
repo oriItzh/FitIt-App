@@ -32,7 +32,7 @@
 
 ## 👥 Meet the Team
 
-- **Ori Itzhaki** — Military fitness instructor  
+- **Ori Itzhaki** — Military fitness instructor, Tennis Instructor
 - **Mathilde Benero** — Tennis instructor  
 - **Or Finkelstein** — Gym enthusiast, Tennis player
 
